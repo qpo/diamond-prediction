@@ -2,9 +2,7 @@ data = read.csv("Victorious_secrets_diamonds_score.csv", header=T)
 data = read.csv("diamonds_build.csv", header=T)
 
 m1 = lm(Listing ~ Carats + Color + Clarity + Cut + Depth + Table + Polish + Symmetry + Fluroescence + Region + Wholesaler_Size)
-
 m2 = lm(Listing ~ Carats + Color + Clarity + Depth + Table + Fluroescence, data=data3)
-
 m3 = lm(Listing ~ Carats + Color + Clarity + Fluroescence, data=data3)
 summary(m3)
 
